@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Guitar Kings for amazing products you'll love"
+    />
+    <title>Guitar Kings | Contact</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/b318972c4d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">Square Eyes</a>
+      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="films.html">Films</a></li>
+          <li><a href="account.html" class="active">Your Account</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contact">
+      <h1>Settings</h1>
+      <form method="POST">
+        <div class="form-wrapper">
+          <section>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" />
+            <label for="guitar">Payment method</label>
+            <select id="guitar" name="Guitar">
+              <option value="Adirondack Red">Visa</option>
+              <option value="Adirondack Blue">Mastercard</option>
+              <option value="Adirondack Green">American Express</option>
+            </select>
+            <div>
+              <input type="checkbox" id="email-updates" name="email-updates" />
+              <label for="email-updates">Sign up for email updates.</label>
+            </div>
+          </section>
+          <section></section>
+        </div>
+        <input type="submit" value="Send Now" class="cta cta-large" />
+      </form>
+    </main>
+    <footer>Copyright &copy;</footer>
+  </body>
+</html>
