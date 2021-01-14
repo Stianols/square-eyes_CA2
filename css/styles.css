@@ -12,9 +12,10 @@ body {
 
 h1,
 h2,
-.logo {
+h3 {
   font-family: "Tahoma", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  color: #fff;
 }
 
 .product-list h2 {
@@ -27,12 +28,17 @@ header {
   justify-content: space-evenly;
 }
 
+header img {
+  max-width: 220px;
+}
+
 nav {
   margin-left: 25px;
+  margin-top: 70px;
   display: none;
   position: fixed;
   top: 45px;
-  background: #202020;
+  background: #9b9b9b;
   z-index: 1000;
   right: 0px;
 }
@@ -54,48 +60,38 @@ nav li {
   display: block;
 }
 
+main {
+  background-image: linear-gradient(to bottom right, #030c15, #e8ad83);
+}
+
 header,
 footer {
-  background-color: #202020;
+  background-color: #9b9b9b;
   color: #fff;
 }
 
 /* Links */
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 header a {
-  color: #fff;
   padding: 10px;
+  align-self: flex-end;
+  align-content: center;
+  font-size: 1.45rem;
 }
 
 .cta {
-  background-color: #661725;
+  background-color: #6a5547;
   color: #fff;
   font-size: 1em;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 25px;
   position: relative;
   display: inline-block;
   overflow: hidden;
-}
-
-.cta:before {
-  content: "";
-  padding: 10px;
-  background: #fff;
-  transform: rotate(45deg);
-  position: absolute;
-  height: 100px;
-  top: -40px;
-  left: -100px;
-  transition: left ease-in-out 1s;
-  opacity: 0.3;
-}
-
-.cta:hover:before {
-  left: 110%;
 }
 
 .cta-large {
@@ -107,7 +103,7 @@ header a {
   font-size: 0.8em;
   grid-column: 2;
   grid-row: 2;
-  min-width: 51.2px;
+  min-width: 50.2px;
   text-align: center;
   margin-top: 5px;
 }
@@ -122,7 +118,7 @@ header a {
 }
 
 .products {
-  background-color: #fbfbfb;
+  background-color: #9b9b9b;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
@@ -136,21 +132,10 @@ header a {
 .products h3,
 .products p {
   grid-column: 1;
-  font-size: 0.9em;
+  font-size: 1.2em;
   margin: 5px;
   text-align: left;
-}
-
-.products--sale {
-  display: flex;
-}
-
-.old-price {
-  text-decoration: line-through;
-}
-
-.cta-sale {
-  background-color: #127300;
+  color: #fff;
 }
 
 footer {
@@ -160,23 +145,14 @@ footer {
 
 /* Home page */
 .welcome {
-  background-image: url("../images/man_clip.jpg");
-
-  background-size: 90%;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: bottom;
-  background-color: linear-gradient(#233a53, #132b45);
-  min-height: 70vh;
-  position: relative;
+    position: relative;
 }
 
 .welcome__content {
-  background-color: #fff;
-  background-color: #fff(0.4);
+  background-color: #9b9b9b;
   position: absolute;
   text-align: center;
-  top: 50px;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   min-width: 210px;
@@ -185,80 +161,59 @@ footer {
   padding: 10px 15px;
 }
 
-/* Contact page */
-input,
-select,
-textarea {
-  border: 1px solid #c4c4c4;
-  border-radius: 5px;
-  margin: 10px 10px 10px 0px;
-  padding: 10px;
+.header-navigation {
+  align-self: flex-end;
+  align-content: center;
+  font-size: 1.45rem;
 }
 
-textarea {
-  height: 65%;
-  min-height: 100px;
-}
+/* Login page */
+.login{  
+  max-width: 350px;;  
+  overflow: hidden;  
+  margin: auto; 
+  margin-top: 100px;
+  padding: 40px 80px;  
+  background: #9b9b9b;  
+  border-radius: 15px;
+  margin-bottom: 40px;   
+}  
+ 
+label {  
+  color: #fff;  
+  font-size: 1.2rem;  
+}  
 
-.contact {
-  max-width: 1000px;
-  margin: 50px auto;
-  text-align: center;
-}
+#Uname, #Pass {  
+  width: 300px;  
+  height: 30px;  
+  border: none;  
+  border-radius: 3px;  
+  padding-left: 8px;  
+}   
+   
+#log {  
+  width: 300px;  
+  height: 30px;  
+  border: none;  
+  border-radius: 17px;  
+  padding-left: 7px;  
+  
+}  
 
-.form-wrapper {
-  display: flex;
-  text-align: left;
-  flex-direction: column;
-}
+span {  
+  color: white;  
+  font-size: 1.2rem;  
+}  
 
-.form-wrapper > * {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
 
-/* Product Specific Page*/
-.product-specific {
-  display: flex;
-  max-width: 1000px;
-  flex-direction: column;
-  margin-bottom: 50px;
-}
+/* Purchase Page*/
 
-.product-specific > * {
-  flex: 1;
-}
-
-.product-specific__details {
-  padding: 0px 30px;
-}
-
-.product-specific__details a {
-  display: block;
-  width: 95.767px;
-  margin: auto;
-}
-
-.product-specific__price {
-  font-size: 1.5em;
-}
-
-.product-image {
-  width: 100%;
-}
-
-.product-image_thumbnails {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 5px;
-}
 
 /*Films Page*/
 .films {
-  max-width: 1000px;
-  margin: auto;
+  max-width: 1920px;
+  margin: none;
 }
 
 .product-list {
@@ -271,17 +226,22 @@ textarea {
   width: 100%;
 }
 
-@media (min-width: 400px) {
-  .product-list {
-    grid-template-columns: 1fr 1fr;
-    padding: 0px 20px;
+@media (max-width: 522px) {
+  .login {
+    padding: 5px;
+    padding-bottom: 20px;
   }
 }
 
-@media (min-width: 600px) {
-  .featured {
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width: 562px) {
+
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 100px 40px 100px;
   }
+}
+
+@media (min-width: 605px) {
 
   header {
     justify-content: start;
@@ -301,26 +261,28 @@ textarea {
     display: none;
   }
 
-  .product-specific {
-    flex-direction: column-reverse;
-  }
-
-  .product-specific__details {
-    margin-bottom: 50px;
-  }
-
   .form-wrapper {
     flex-direction: row;
   }
 }
 
 @media (min-width: 800px) {
-  .featured {
-    grid-template-columns: repeat(4, 1fr);
+
+  .settings {
+    background-color: #9b9b9b;
+    min-width: 1000px;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 25px;
   }
 
-  .reviews__content div {
-    margin: 50px;
+  h3 {
+    text-align: start;
+  }
+
+
+  .featured {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .welcome {
@@ -334,18 +296,16 @@ textarea {
 
   .product-list {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: auto;
+    padding: 30px 50px 40px 50px;
   }
 
-  .product-specific {
-    flex-direction: row;
-    margin: 50px auto;
+  .welcome__content {
+    padding: 20px 70px;
   }
 
-  .product-specific__details {
-    margin-bottom: 0px;
-  }
+  .products {
+      min-width: 181px;
 
-  .header-navigation {
-    align-content: center;
-  }
+
 }
