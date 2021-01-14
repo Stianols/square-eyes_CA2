@@ -231,6 +231,10 @@ span {
     padding: 5px;
     padding-bottom: 20px;
   }
+
+  .cta-large {
+      margin-top: 15px;
+  }
 }
 
 @media (min-width: 562px) {
@@ -239,6 +243,8 @@ span {
     grid-template-columns: 1fr 1fr;
     padding: 30px 100px 40px 100px;
   }
+
+  
 }
 
 @media (min-width: 605px) {
@@ -306,6 +312,5 @@ span {
 
   .products {
       min-width: 181px;
-
 
 }
