@@ -30,13 +30,45 @@
       </nav>
     </header>
     <main class="account" id="settings-main">
-      <div class="login settings">
+      <div class="login">
         <h1>Account Settings</h1>
-        <h3>Username:</h3>
-        <h2>Personal Information</h2>
-        <h3>Address:</h3>
-        <h2>Billing Information:</h2>
-        <h3>Payment Method</h3>
+        <form id="login" method="POST" action="login.php">
+          <div class="settings-form">
+            <label>Name</label>
+            <input type="text" name="Uname" id="Uname" placeholder="Username" />
+            <label>Password</label>
+            <input
+              type="Password"
+              name="Pass"
+              id="Pass"
+              placeholder="Click here to change password"
+            />
+            <label>Email</label>
+            <input
+              type="Email"
+              name="Email"
+              id="Email"
+              placeholder="settings@squareeyes.com"
+            />
+            <label for="payment">Payment Method</label>
+            <select id="Payment" name="Payment">
+              <option value="Visa">Visa</option>
+              <option value="Mastercard">Mastercard</option>
+              <option value="American Express">American Express</option>
+            </select>
+            <label>Card Number</label>
+            <input
+              type="text"
+              name="Exdate"
+              id="Exdate"
+              placeholder="XXXX XXXX XXXX XXXX"
+            />
+            <label>Expiry Date</label>
+            <input type="text" name="Cnumb" id="Cnumb" placeholder="MMYY" />
+            <label>Security Code</label>
+            <input type="text" name="Scode" id="Scode" placeholder="XXX" />
+          </div>
+        </form>
       </div>
     </main>
     <footer>Copyright &copy;</footer>

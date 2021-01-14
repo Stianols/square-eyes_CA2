@@ -152,7 +152,7 @@ footer {
   background-color: #9b9b9b;
   position: absolute;
   text-align: center;
-  top: 100px;
+  top: 150px;
   left: 50%;
   transform: translateX(-50%);
   min-width: 300px;
@@ -184,7 +184,13 @@ label {
   font-size: 1.2rem;  
 }  
 
-#Uname, #Pass {  
+#Uname,
+#Pass,
+#Payment,
+#Cnumb,
+#Exdate,
+#Scode,
+#Email {  
   width: 300px;  
   height: 30px;  
   border: none;  
@@ -225,6 +231,22 @@ span {
 .products img {
   width: 100%;
 }
+
+/* Settings Page */
+
+.settings {
+    background-color: #9b9b9b;
+    min-width: 350px;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 25px;
+    
+  }
+
+  .settings-form {
+      display: grid;
+      gap: 15px
+  }
 
 @media (max-width: 522px) {
   .login {
@@ -274,13 +296,7 @@ span {
 
 @media (min-width: 800px) {
 
-  .settings {
-    background-color: #9b9b9b;
-    min-width: 1000px;
-    display: grid;
-    grid-template-rows: 1fr;
-    gap: 25px;
-  }
+  
 
   h3 {
     text-align: start;
