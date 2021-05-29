@@ -7,7 +7,7 @@
       name="description"
       content="Browse through all films on Square Eyes."
     />
-    <title>Square Eyes | Films</title>
+    <title>Square Eyes | Cart</title>
     <link href="css/styles.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/1e7456fd36.js"
@@ -24,21 +24,17 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="films.html" class="active">Films</a></li>
+          <li><a href="films.html">Films</a></li>
           <li><a href="login.html">Your Account</a></li>
           <li><a href="cart.html" class="active">Cart</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="products"></div>
-      <div class="cart">
+    <main class="cart-page">
         <div class="cart-list"></div>
-        <div class="total">Total:</div>
-        <a href="cart.html" class="checkout-button">Checkout</a>
-      </div>
+        <div class="total"></div>
     </main>
     <footer>Copyright &copy;</footer>
-    <script src="js/products.js" type="module"></script>
+    <script src="js/cart.js" type="module"></script>
   </body>
 </html>
