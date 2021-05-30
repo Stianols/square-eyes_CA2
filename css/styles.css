@@ -230,9 +230,12 @@ span {
   font-weight: bold;
 }
 
-.product-button:hover {
+.product-button:hover,
+.cta-large,
+.cta-small {
   cursor: pointer;
 }
+
 
 .cart {
   max-width: 600px;
