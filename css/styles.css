@@ -1,3 +1,5 @@
+@import "/css/imports/contact.css";
+
 body {
   font-family: "Tahoma", Verdana, Geneva, Tahoma, sans-serif;
   min-height: 120vh;
@@ -13,6 +15,11 @@ h3 {
   text-align: center;
   color: #fff;
   font-size: 1.9rem;
+}
+
+h4 {
+  color: #000;
+  font-size: 1rem;
 }
 
 header {
@@ -77,7 +84,7 @@ header a {
 }
 
 .cta {
-  background-color: #6a5547;
+  background-color: rgb(100, 0, 0);
   color: #fff;
   font-size: 1em;
   text-transform: uppercase;
@@ -228,7 +235,6 @@ span {
 }
 
 .cart {
-  border: 1px solid green;
   max-width: 600px;
   min-width: 200px;
   padding: 20px;
@@ -266,8 +272,7 @@ span {
 
 .cart-page {
   background-image: none;
-  max-width: 400px;
-  height: 130px;
+  margin: 400px 300px;
   background: #9b9b9b;
   border-radius: 20px;
   padding: 20px;

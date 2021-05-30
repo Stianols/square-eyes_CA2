@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover unique and creative films, support producers by purchasing exclusive movies. "
+    />
+    <title>Square Eyes | Home</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/1e7456fd36.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo"
+        ><img src="images/SquareEyes_Logo.png" alt="square eyes logo"
+      /></a>
+      <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav class="header-navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="films.html">Films</a></li>
+          <li><a href="cart.html">Your Cart</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+        <form id="contactForm">
+          <div>
+            <label>
+              <h4>First name (required)</h4>
+              <input name="firstName" id="firstName" />
+            </label>
+            <div class="form-error" id="firstNameError">
+              Please enter your first name
+            </div>
+          </div>
+  
+          <div>
+            <label>
+              <h4>Subject (minimum 10 characters)</h4>
+              <input name="subject" id="subjectName" />
+            </label>
+            <div class="form-error" id="subjectError">
+              The subject must be at least 10 characters
+            </div>
+          </div>
+  
+          <div>
+            <label>
+              <h4>Email (required)</h4>
+              <input name="email" id="email" />
+            </label>
+            <div class="form-error" id="emailError">
+              Please enter a valid email address
+            </div>
+          </div>  
+          <button class="cta-large">Submit</button>
+        </form>
+      </main>
+    <footer>Copyright &copy;</footer>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
