@@ -199,9 +199,9 @@ span {
 }
 
 .product {
-  margin: 20px;
-  padding: 20px;
-  background: #9b9b9b;
+  margin: 30px 20px 70px 20px;
+  padding: 0px;
+  background: #292929;
   border-radius: 15px 15px;
   display: flex;
   flex-direction: column;
@@ -213,9 +213,18 @@ span {
 }
 
 .product-image {
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 150px;
+  height: 180px;
+  width: 300px;
+}
+
+.details-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 600px;
+  margin-left: calc(50% - 300px);
 }
 
 .product-button {
@@ -228,6 +237,43 @@ span {
   padding: 10px;
   transition: all 1s;
   font-weight: bold;
+}
+
+.price {
+  display: flex;
+  justify-content: left;
+  margin-top: 180px;
+  background-color: #292929;
+  border-radius: 0px 0px 15px 15px;
+  max-height: 60px;
+}
+
+.regular-price {
+  font-size: 1.5em;
+  text-decoration: line-through;
+  color: #9b9b9b;
+  margin-left: 10px;
+}
+
+.sale-price {
+  font-size: 1.5em;
+  margin-left: 5px;
+}
+
+.details-price {
+  display: flex;
+}
+
+.details-regular-price {
+  font-size: 1.5em;
+  text-decoration: line-through;
+  color: #9b9b9b;
+  margin-left: 10px;
+}
+
+.details-sale-price {
+  font-size: 1.5em;
+  margin-left: 5px;
 }
 
 .product-button:hover,
@@ -320,8 +366,30 @@ span {
   }
 }
 
-@media (min-width: 562px) {
+@media (max-width: 676px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
+  .product {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 676px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .product {
+    max-width: 300px;
+  }
   
 }
 
@@ -371,4 +439,19 @@ span {
   .welcome__content {
     padding: 20px 70px;
   }
+
+}
+
+
+@media (min-width: 1300px) {
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.product {
+  max-width: 300px;
+}
 }

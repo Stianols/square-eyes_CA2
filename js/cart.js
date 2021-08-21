@@ -11,7 +11,7 @@ cartItems.forEach(function(cartElement){
         <h4>${cartElement.name}</h4>
         <div style="background-image: url(${cartElement.image})" class="cart-image"></div>
     </div>
-
+    
     `
 })
 totalContainer.innerHTML = `Total: $${total}`
